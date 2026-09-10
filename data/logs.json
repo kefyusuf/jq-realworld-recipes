@@ -1,0 +1,27 @@
+[
+  {
+    "timestamp": "2026-09-10T08:00:00Z",
+    "level": "info",
+    "message": "Application started"
+  },
+  {
+    "timestamp": "2026-09-10T08:01:14Z",
+    "level": "warning",
+    "message": "Slow query detected"
+  },
+  {
+    "timestamp": "2026-09-10T08:02:31Z",
+    "level": "error",
+    "message": "Database connection failed"
+  },
+  {
+    "timestamp": "2026-09-10T08:03:05Z",
+    "level": "info",
+    "message": "Retrying database connection"
+  },
+  {
+    "timestamp": "2026-09-10T08:03:08Z",
+    "level": "error",
+    "message": "Database retry failed"
+  }
+]

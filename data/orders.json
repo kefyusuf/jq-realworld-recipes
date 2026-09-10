@@ -1,0 +1,34 @@
+{
+  "orders": [
+    {
+      "id": 101,
+      "customer": "Alice",
+      "total": 120,
+      "status": "completed"
+    },
+    {
+      "id": 102,
+      "customer": "Bob",
+      "total": 70,
+      "status": "cancelled"
+    },
+    {
+      "id": 103,
+      "customer": "Alice",
+      "total": 230,
+      "status": "completed"
+    },
+    {
+      "id": 104,
+      "customer": "Charlie",
+      "total": 95,
+      "status": "completed"
+    },
+    {
+      "id": 105,
+      "customer": "Charlie",
+      "total": 35,
+      "status": "pending"
+    }
+  ]
+}
