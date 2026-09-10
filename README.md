@@ -24,6 +24,17 @@ This repository is part of my exploration of jq and Unix-style data processing. 
 jq -f recipes/01-active-users.jq data/users.json
 ```
 
+## Recipe index
+
+| Recipe | Demonstrates |
+| --- | --- |
+| `01-active-users.jq` | Array iteration and `select` |
+| `02-user-summary.jq` | Object projection and transformation |
+| `03-completed-order-total.jq` | Filtering, `map`, and `add` |
+| `04-orders-by-customer.jq` | `group_by` and aggregation |
+| `05-error-logs.jq` | Filtering structured log entries |
+| `06-api-style-projection.jq` | `sort_by`, conditionals, and response projection |
+
 ## Platform notes
 
 The jq recipes work the same way on Windows, Linux, and macOS. The only difference is how the optional `examples.sh` helper script is executed.
@@ -80,7 +91,9 @@ bash ./examples.sh
 │   ├── 04-orders-by-customer.jq
 │   ├── 05-error-logs.jq
 │   └── 06-api-style-projection.jq
+├── .gitattributes
 ├── examples.sh
+├── LICENSE
 └── README.md
 ```
 
@@ -91,3 +104,7 @@ The goal is not to build a large jq framework. Each recipe demonstrates one or t
 ## jq concepts used
 
 `select`, `map`, `sort_by`, `group_by`, `add`, pipelines (`|`), object construction, array iteration, and conditionals.
+
+## License
+
+This project is licensed under the MIT License. See [`LICENSE`](LICENSE) for details.
