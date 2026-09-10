@@ -24,12 +24,46 @@ This repository is part of my exploration of jq and Unix-style data processing. 
 jq -f recipes/01-active-users.jq data/users.json
 ```
 
+## Platform notes
+
+The jq recipes work the same way on Windows, Linux, and macOS. The only difference is how the optional `examples.sh` helper script is executed.
+
+### Linux / macOS
+
+Run a single recipe:
+
+```bash
+jq -f recipes/01-active-users.jq data/users.json
+```
+
 Run all examples:
 
 ```bash
 chmod +x examples.sh
 ./examples.sh
 ```
+
+### Windows
+
+You can run individual recipes directly from PowerShell or Command Prompt:
+
+```powershell
+jq -f recipes/01-active-users.jq data/users.json
+```
+
+The `examples.sh` helper is a Bash script. To run it on Windows, use Git Bash or WSL:
+
+```bash
+./examples.sh
+```
+
+Or, from PowerShell when Bash is available:
+
+```powershell
+bash ./examples.sh
+```
+
+> `chmod +x` is not required when running the recipes directly on Windows.
 
 ## Repository structure
 
